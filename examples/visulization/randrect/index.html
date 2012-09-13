@@ -1,0 +1,38 @@
+<!DOCTYPE html >
+<html>
+<head>
+<style type="text/css" rel="stylesheet">
+body {background-color:#000;}
+.content{
+  width:960px;
+  height:600px;
+  margin:auto;
+  
+}
+</style>
+</head>
+<body>
+<header>
+</header>
+<script type="text/javascript" src="../../lib/jquery-1.8.1.min.js"></script>
+<script type="text/javascript">
+function supports_canvas() {
+  return !!document.createElement('canvas').getContext;
+}
+if(supports_canvas()){
+  $('#supportmsg').html('<h1 >Canvas not supported in this browser.</h1>')
+}
+
+//I hope that you enjoyed the tutorial :)
+</script>
+<div id='supportmsg'></div>
+<div class="content">
+<canvas id="canvas" width="960" height="600"></canvas>
+</div>
+<script type="text/javascript" src="../../../lib/canvas.js"></script>
+<script type="text/javascript" src="../../../lib/utill.js"></script>
+<script type="text/javascript" src="simple.js"></script>
+
+
+</body>
+</html>
